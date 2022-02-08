@@ -1,0 +1,11 @@
+= zapcloudlogging
+
+This package provides a link:https://github.com/uber-go/zap[zap] configuration for Cloud Logging.
+
+== Usage
+
+[source, golang]
+----
+logger, err := zapcloudlogging.NewDevelopmentConfig().Build()
+logger, err := zapcloudlogging.NewProductionConfig().Build()
+----
